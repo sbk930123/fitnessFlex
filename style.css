@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 1400px;
+  height: 600px;
+  margin: 100px auto;
+}
+
+img {
+  position: absolute;
+  height: 450px;
+  right: 0;
+  bottom: 0;
+}
+
+h1,
+p {
+  color: #fff;
+}
+
+p {
+  display: none;
+  position: absolute;
+  transform: translate(50px, 70px);
+
+}
+
+button {
+  display: none;
+  position: absolute;
+  transform: translate(50px, 180px);
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  border-radius: 15px;
+  background-color: transparent;
+
+}
+
+.main-h1 {
+  display: none;
+  transform: translate(50px, 50px);
+}
+
+.sub-h1 {
+  text-align: center;
+  margin-top: 30px;
+  padding: 0;
+  display: block;
+}
+
+.fitbox1,
+.fitbox2,
+.fitbox3 {
+  position: relative;
+  flex-grow: 1;
+  transition: all 600ms ease-in-out;
+}
+
+.fitbox1 {
+  background-color: #283491;
+}
+
+.fitbox2 {
+  background-color: #f18684;
+}
+
+.fitbox3 {
+  background-color: #6ee2f1;
+}
+
+.fitbox1:hover,
+.fitbox2:hover,
+.fitbox3:hover {
+  flex-grow: 2;
+}
+
+.fitbox1:hover .sub-h1,
+.fitbox2:hover .sub-h1,
+.fitbox3:hover .sub-h1 {
+  display: none;
+}
+
+.fitbox1:hover p,
+.fitbox2:hover p,
+.fitbox3:hover p,
+.fitbox1:hover .main-h1,
+.fitbox2:hover .main-h1,
+.fitbox3:hover .main-h1,
+.fitbox1:hover button,
+.fitbox2:hover button,
+.fitbox3:hover button {
+  display: block;
+}
+
+
